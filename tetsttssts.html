@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            #timer{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 60pt;
+                color: white;
+                font-family: fantasy;
+                opacity: 0.6;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="uidiv">
+            <div style="width: 640px; position: relative;">
+                
+                <video id="video" width="640" height="460" autoplay></video>
+                <div id="timer">JEPRETZZ</div>
+            </div>
+            
+            <button id="snap" onclick="capture()">Snap Photo</button>
+            <button id="prin" onclick="printt()">Print Photo</button>
+            <div>
+                <img id="test">
+            </div>
+        </div>
+        <div id="dispdiv">
+            
+        </div>
+        <div id="printdiv" style="display: none;">
+            
+        </div>
+        
+        <script src="myscripts.js"></script>
+    </body>
+    
+</html>
